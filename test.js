@@ -1,5 +1,5 @@
-import test from 'ava';
-import Yoga from '.';
+import { test } from 'https://code4fukui.github.io/ava-es/ava.js';
+import { Yoga } from './Yoga.js';
 
 test('yoga', t => {
 	const config = Yoga.Config.create();

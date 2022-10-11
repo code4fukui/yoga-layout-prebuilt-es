@@ -20,7 +20,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @format
  */
 
-var CONSTANTS = require('./YGEnums');
+import { CONSTANTS } from './YGEnums.js';
 
 var Layout = function () {
   function Layout(left, right, top, bottom, width, height) {
@@ -121,7 +121,7 @@ var Value = function () {
   return Value;
 }();
 
-module.exports = function (bind, lib) {
+export const Yoga = function (bind, lib) {
   function patch(prototype, name, fn) {
     var original = prototype[name];
 

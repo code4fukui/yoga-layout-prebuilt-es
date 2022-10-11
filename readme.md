@@ -2,18 +2,10 @@
 
 > Prebuilt [yoga-layout](https://github.com/facebook/yoga) package
 
-
-## Install
-
-```
-$ npm install yoga-layout-prebuilt
-```
-
-
 ## Usage
 
 ```js
-import Yoga from 'yoga-layout-prebuilt';
+import { Yoga } from 'https://code4fukui.github.io/yoga-layout-prebuilt-es/Yoga.js';
 // Same as if imported from yoga-layout
 ```
 

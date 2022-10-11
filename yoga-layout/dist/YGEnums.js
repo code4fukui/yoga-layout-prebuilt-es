@@ -12,7 +12,7 @@
  * @format
  */
 
-var CONSTANTS = {
+export var CONSTANTS = {
   ALIGN_COUNT: 8,
   ALIGN_AUTO: 0,
   ALIGN_FLEX_START: 1,
@@ -106,5 +106,3 @@ var CONSTANTS = {
   WRAP_WRAP: 1,
   WRAP_WRAP_REVERSE: 2
 };
-
-module.exports = CONSTANTS;

@@ -1,8 +1,10 @@
+const module = {};
+
 (function (root, wrapper) {
   if (typeof define == "function" && define.amd) define([], function () {
     return wrapper;
   });else if (typeof module == "object" && module.exports) module.exports = wrapper;else (root.nbind = root.nbind || {}).init = wrapper;
-})(this, function (Module, cb) {
+})(globalThis, function (Module, cb) {
   if (typeof Module == "function") {
     cb = Module;Module = {};
   }Module.onRuntimeInitialized = function (init, cb) {
@@ -1143,7 +1145,7 @@
       }
     }_nbind.addMethod = addMethod;function throwError(message) {
       throw new Error(message);
-    }_nbind.throwError = throwError;_nbind.bigEndian = false;_a = _typeModule(_typeModule), _nbind.Type = _a.Type, _nbind.makeType = _a.makeType, _nbind.getComplexType = _a.getComplexType, _nbind.structureList = _a.structureList;var BindType = function (_super) {
+    }_nbind.throwError = throwError;_nbind.bigEndian = false;const _a = _typeModule(_typeModule); _nbind.Type = _a.Type, _nbind.makeType = _a.makeType, _nbind.getComplexType = _a.getComplexType, _nbind.structureList = _a.structureList;var BindType = function (_super) {
       __extends(BindType, _super);function BindType() {
         var _this = _super !== null && _super.apply(this, arguments) || this;_this.heap = HEAPU32;_this.ptrSize = 4;return _this;
       }BindType.prototype.needsWireRead = function (policyTbl) {
@@ -9818,3 +9820,5 @@
     shouldRunNow = false;
   }run();
 });
+
+export const nbind = globalThis.nbind.init;

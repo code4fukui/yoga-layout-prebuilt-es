@@ -12,8 +12,8 @@
  * @format
  */
 
-var Yoga = require('./entry-common');
-var nbind = require('../build/Release/nbind.js');
+import { Yoga as _Yoga } from './entry-common.js';
+import { nbind } from '../build/Release/nbind.js';
 
 var ran = false;
 var ret = null;
@@ -37,4 +37,4 @@ if (!ran) {
 }
 
 // $FlowFixMe ret will not be null here
-module.exports = Yoga(ret.bind, ret.lib);
+export const Yoga = _Yoga(ret.bind, ret.lib);
