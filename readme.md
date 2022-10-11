@@ -1,6 +1,6 @@
-# yoga-layout-prebuilt [![test](https://github.com/vadimdemedes/yoga-layout-prebuilt/workflows/test/badge.svg)](https://github.com/vadimdemedes/yoga-layout-prebuilt/actions)
+# yoga-layout-prebuilt-es [![test](https://github.com/vadimdemedes/yoga-layout-prebuilt/workflows/test/badge.svg)](https://github.com/vadimdemedes/yoga-layout-prebuilt/actions)
 
-> Prebuilt [yoga-layout](https://github.com/facebook/yoga) package
+> Prebuilt [yoga-layout](https://github.com/facebook/yoga) package for Deno / Browsers
 
 ## Usage
 
